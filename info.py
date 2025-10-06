@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25471015'))
 API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8291678017:AAHP-rPbDsrEYLVWYYmpZ6Aru5stfr_60UA")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8244600596:AAHVVBpE_O-mAWP66Xvny2N5rTBCPElBpCs")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,12 +29,12 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/0e2bc4c69e7a
 CODE = (environ.get('CODE', 'https://t.me/Hindi_movie_uplod/43'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'papajiurl.com'))
-STREAM_API = (environ.get('STREAM_API', '77960489f7791283414e359c32475f1f07e0fdd3'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'arlinks.in'))
+STREAM_API = (environ.get('STREAM_API', 'b0a9ac72d3e476a2fe0a3c166376f4b71ade1644'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hindi_movie_uplod/36'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5492204858').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5547390021').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002406799151').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -50,15 +50,15 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cute61283_db_user:OnGplX1cR3YOA44K@cluster0.1mpg0mr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Uuu:OnGplX1cR3YOA44K@cluster0.uvw4wzu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://proskevya_db_user:BMVaZlqXVdNRzEre@cluster0.nxayeqo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://proskevya_db_user:bUuKe8djPAaqDSea@cluster0.xeviwie.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arlinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'c0faab1f5c6e9d47a38356b93ccc278fe27f5672')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'b0a9ac72d3e476a2fe0a3c166376f4b71ade1644')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -68,8 +68,8 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+MPYqWUWHJcY2OTVl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Junglekirani')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1003174894633'))
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Imam07t')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1002989367095'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+MPYqWUWHJcY2OTVl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
