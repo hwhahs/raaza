@@ -1,12 +1,16 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.12.2
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends git && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN cd /
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /TheMovieProviderBot
-WORKDIR /TheMovieProviderBot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+WORKDIR /DreamxBotz
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip --root-user-action=ignore && \
+    pip install --no-cache-dir -r requirements.txt --root-user-action=ignore
+
+COPY . .
+
+CMD ["python3", "bot.py"]
